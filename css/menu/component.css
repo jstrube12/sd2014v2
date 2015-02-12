@@ -1,0 +1,171 @@
+.main > section {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.name {
+	display: inline-block;
+	font-family:'NHaasGroteskDSW01-95Blk';
+	float: left;
+	width: 50%;
+	padding: 24px 0;
+}
+
+
+section button {
+	border: none;
+	color: #000;
+	padding: 24px 0;
+	display: block;
+	width: 50%;
+	cursor: pointer;
+	margin: 0;
+	font-size: 1.5em;
+	float: right;
+	text-align: right;
+	background: transparent;
+}
+
+section button:hover {
+	color: #000;
+}
+
+section button.active {
+	color: red;
+}
+
+section button.disabled {
+	color: #000;
+	pointer-events: none;
+}
+
+
+/* General styles for all menus */
+.cbp-spmenu {
+	background: url('img/sdNavBckgnd.png') repeat;
+	position: fixed;
+	z-index: 1000;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.cbp-spmenu a:hover {
+	color: red;
+	background: #000;
+	text-decoration: none;
+}
+
+.wrap-it {
+	background: #000;
+	width: 100%;
+}
+
+.wrap-it-two {
+background: url('img/sdNavBckgnd.png') repeat;
+}
+
+/*
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+*/
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal a {
+	float: right;
+	text-align: right;
+	width: 10%;
+	height: 50px;
+	padding: 0.8em;
+	background: #000;
+}
+
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -50px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-top {
+	top: 50px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}

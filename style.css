@@ -1,0 +1,460 @@
+/*
+Theme Name: Strube Design
+Theme URI: http://strubedesign.com/
+Version: 1.0
+*/
+
+/* FONTS
+font-family:'NeuzeitGroLig W01 Regular';
+font-family:'Neuzeit Grotesk W01 Reg1487164';
+font-family:'NeuzeitGro W01 Bold';
+font-family:'NeuzeitGroBla W01 Regular';
+font-family:'Neuzeit Grotesk Cond W01487176';
+font-family:'Neuzeit Grotesk ExtCond1487180';
+*/
+
+
+/* COLORS
+BLACK ///	color: #272729;
+color: #b5b5b5;
+
+#7c7c7c;
+
+#7c7c7c;
+
+
+#f1f1f1;
+*/
+
+/*---------------------------------
+	HTML ELEMENTS
+-----------------------------------*/
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('img/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+
+/*---------------------------------
+	HTML ELEMENTS
+-----------------------------------*/
+*{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+a { color: #186aa2; text-decoration: none; }
+a:active {}
+a:visited { color: #b5b5b5; text-decoration: none; }
+a:hover { color: #b5b5b5; text-decoration: none; }
+a img{border:0;}
+a [class^="icon-"]{color:inherit;text-decoration:none;}
+strong,b{color:#272729;font-weight:bold;}
+strike{}
+em,i{}
+.hide{display:none;}
+.show{display:block;}
+
+/*---------------------------------
+	UTILITY
+-----------------------------------*/
+.center{text-align:center;}
+.left{text-align:left;}
+.right{text-align:right;}
+
+
+/*---------------------------------
+	HR
+-----------------------------------*/
+hr{clear:both;border-bottom:0; border-top:1px dotted #f1f1f1;border-right:0;border-left:0; margin:36px 0 18px 0;min-height: 0;height:1px;}
+hr.solid{border-style: solid; border-color:#f1f1f1; }
+hr.top{margin:0 0 18px 0;}
+hr.bottom{ border-top:4px solid #272729; margin:0;}
+
+
+			
+			
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family:'NeuzeitGro W01 Bold';
+font-weight:normal;
+}
+
+p {
+	margin: 0;
+}
+
+h1 {
+	font-size: 1.25em;
+}
+
+thead th,
+tbody th{
+font-family:'Neuzeit Grotesk W01 Reg1487164';
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family:'NeuzeitGro W01 Bold';
+
+}
+
+blockquote{
+font-family:'NeuzeitGro W01 Bold';
+
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+body{
+margin:0;
+padding:0px;
+color: #b5b5b5;
+background-color: #f7f7f7;
+/* font:normal 0.9em/150% sans-serif; */
+text-shadow: 0 0 1px transparent; /* google font pixelation fix */
+font-family:'Neuzeit Grotesk W01 Reg1487164';
+line-height: 125%;
+}
+
+#main {
+	padding: 5% 0;
+	position: relative;
+	z-index: 0;
+	background: #fff;
+	height: 100%;
+}
+
+
+#footer{
+text-align:left;
+padding: 80px 0;
+margin: 0;
+clear: both;
+background-color: #f7f7f7;
+}
+
+#footer a {
+	color: #b5b5b5;
+	border: none;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #272729;
+}
+
+
+.callout{
+background:#4598ef;/*#86dc00;*/
+padding:3em 0;
+color:#fff;
+box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
+text-align: center;
+text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+display:block;
+}
+	.callout + div.grid{margin-top:50px;}
+	 a.callout{cursor:pointer;}
+	 .callout i.icon-4x{font-size:6em;}
+	 .callout h4{margin-bottom:30px;}
+	 .callout-top{margin:50px 0 0 0;}
+	 .callout p{margin-bottom:0;}
+	 .callout .button{margin-top:10px;}
+	 .callout.green{background:#19ad0b;/*#86dc00;*/}
+
+#mc_embed_signup{
+padding:30px 0;
+}
+
+#ui-preview{
+border:5px solid #ddd;
+margin:30px 0;
+display:block;
+}
+
+
+
+
+
+
+
+/*---------------------------------
+	Navigation
+-----------------------------------*/
+
+
+
+.nav {
+	display: block;
+	font-size: 1em !important;
+	float: left;
+	width: 100%;
+	margin: 0 0 20% 0;
+	color: #b5b5b5;
+}
+
+.nav a {
+	color: #b5b5b5;
+	text-decoration: none;
+} 
+
+.nav a:hover {
+	color: #272729;
+	text-decoration: none;
+}
+
+
+.nav ul li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.arrow {
+	font-size: 1.5em;
+	display: inline-block;
+	float: left;
+	margin: 0 0 72px 0;
+	color: #272729;
+}
+
+
+li.menu-toggle.first {
+	display: none;
+}
+
+
+
+
+/*---------------------------------
+	The Works
+-----------------------------------*/
+
+				
+#inner {
+	height: auto;
+	clear: both;
+	padding: 36px 0;
+    }
+
+.work a {
+	height: 60px;
+	color: #272729;
+    display: inline-block;
+    border-bottom: solid 4px #272729;
+    font-family:'NeuzeitGro W01 Bold';
+	color: #272729;
+	font-size: 3.5em;
+	line-height: 100%;
+}
+
+.work a:hover {
+	color: #272729;
+}
+
+.work a.active {
+	color: #272729;
+}
+
+.work a.active:hover {
+	color: #272729;
+}
+
+
+.work a.locked {
+	color: #272729;
+}
+                  
+.work a.locked:hover {
+	color: #272729;
+}
+
+
+.credits {
+	padding: 54px 0;
+}
+
+
+
+
+/*---------------------------------
+	GRID/COLUMNS
+-----------------------------------
+	tinyfluidgrid.com
+	& girlfriendnyc.com
+	& Elliot Jay Stocks
+	with some tiny queaks 
+	from Johnathon Strube.
+-----------------------------------*/
+ 
+.grid {
+margin: 0 5%;
+padding:0;
+}
+
+.grid.flex {
+padding:0;
+width:90%;
+}
+
+.row{
+display:block;
+overflow:hidden;
+clear:both;
+}
+
+*[class*="col_"].alpha{margin-left:0;}
+*[class*="col_"].omega{margin-right:0;}
+
+
+ 
+.col_1  { width: 15%; }
+.col_2  { width: 32%; }
+.col_3  { width: 49%; }
+.col_4  { width: 66%; }
+.col_5  { width: 83%; }
+.col_6  { width: 100%; }
+
+
+
+*[class*="col_"]{
+margin:0 2% 0 0;
+float: left;
+display: block;
+}
+
+.grid img{
+max-width: 100%;
+height:auto;
+}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+* html .clearfix, *:first-child+html .clearfix{zoom:1}
+
+/* Viewable Grids 
+	To view your grids, add the class .visible to any grid container.
+	This will add a background color so you can see the layout of your grids. 
+*/
+*[class*="col_"].visible{
+min-height: 1px;
+height: 1px;
+border: none;
+}
+
+
+/*---------------------------------
+	Responsive Grid Media Queries - 1280, 1024, 768, 480
+	1280-1024 	- desktop (default grid)
+	1024-768 	- tablet landscape
+	768-480 	- tablet 
+	480-less 	- phone landscape & smaller
+-----------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+	
+	.grid *[class*="col_"]{}
+	.grid{max-width: 1024px;}
+	.show-desktop	{display:block;}
+	.hide-desktop	{display:none;}
+	.show-tablet	{display:none;}
+	.hide-tablet	{display:block;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+	
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	
+	.grid *[class*="col_"]{}
+	.grid{max-width: 768px;}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:block;}
+	.hide-tablet	{display:none;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+	
+}
+
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+	.grid *[class*="col_"]{
+	float:none;
+	width:auto;
+	clear:both;
+	display:block;
+	}
+	
+	/* columns inside of columns */
+	.grid *[class*="col_"] [class*="col_"]{
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	}
+	
+	.grid{max-width: 480px;}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:block;}
+	.hide-tablet	{display:none;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+	
+}
+
+@media all and (max-width: 480px) {
+	
+	.grid *[class*="col_"]{
+	float:none;
+	width:auto;
+	clear:both;
+	display:block;
+	}
+	
+	/* columns inside of columns */
+	.grid *[class*="col_"] [class*="col_"]{
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	}
+	
+	.grid{max-width: 100%;/*320*/}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:none;}
+	.hide-tablet	{display:block;}
+	.show-phone		{display:block;}
+	.hide-phone		{display:none;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
